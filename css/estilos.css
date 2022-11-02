@@ -1,0 +1,260 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+font-family: sans-serif; Arial;
+margin: 0;
+padding: 0;
+}
+
+header {
+  background-color: white;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 5px;
+  flex-wrap: wrap;
+
+
+
+}
+ .objeto1 {
+   height: auto;
+   width: 20%;
+   background-color:  #474542;
+   display: flex;
+   align-items: center;
+   margin: 5%;
+   padding: 1%;
+ }
+
+ .objeto2 {
+   height: auto;
+   width: 20%;
+   text-align: center;
+   font-size: 1.5vw;
+   color: orange;
+ }
+.redes{
+  width: 30%;
+	background-color: #474542;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 5%;
+	padding: 1%;
+}
+
+ img {
+   height: 90%;
+   width: 90%;
+ }
+
+ nav{
+
+   height: 30%;
+   background-color: #474542;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   font-size: 1em;
+ }
+ .menu{
+   list-style: none;
+   text-align: center;
+   padding-top: 5%;
+   padding-bottom: 5%;
+ }
+ .menu li a{
+   text-decoration: none;
+   color: orange;
+   padding: 10%;
+   display: block;
+   font-size: 10mm;
+ }
+ .menu li{
+   display: inline-block;
+   text-align: center;
+ }
+ .menu li a:hover{
+   background: black;
+   color: white;
+ }
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+aside{
+  flex: 30%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+section{
+  flex: 70px;
+  padding: 20px;
+  background-color: #F1AD47;
+  width: 700px;
+
+
+}
+
+.carne {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20%;
+  padding: 2%;
+}
+
+.asado3{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20%;
+  padding: 2%;
+
+}
+
+
+footer  {
+  background-color:  #474542;
+  height: 20%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.sociales {
+  display: flex;
+  justify-content: space-around;
+}
+
+.enlace1 {
+  display: flex;
+  justify-content:center;
+align-items:center;
+margin: 3%;
+
+}
+.sociales{
+  width: 30%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5%;
+  padding: 1%;
+}
+
+.enlace2 {
+  display: flex;
+  justify-content:center;
+align-items:center;
+margin-left: 1em;
+font-family: "pipina";
+color: white;
+font-size: 30px;
+
+}
+
+.enlace3 {
+  color: white;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.icono {
+  position: fixed;
+  z-index: 999;
+  bottom: 1%;
+  right: 1%;
+  padding: 1%;
+}
+
+.icono:hover {
+  transform: scale(1.1);
+  transition: 0.3s;}
+
+.boton{
+  width: 80px;
+  transition: ease 1s;
+}
+
+@font-face {
+  font-family: "pipina";
+  src: url("../fuentes/arabella.ttf") format("truetype");
+}
+
+h3 {font-family: 'Roboto Slab', serif;}
+
+@media screen and (max-width: 700px){
+  nav, .row{
+    flex-direction: column;
+  }
+} /*el nav y row van a aparecer uno abajo del otro cuando se achique la pantalla*/
+
+@media (max-width: 700px){
+  body {
+    background-color: #DEBE8E;
+  } /*va cambiar de color el body a medida que cambia el tamano*/
+}
+
+@media (max-width: 575px){
+  footer{
+    background-color: #F7E7CF;
+  }
+} /*cambia de color el footer cuando achica a tamano celular*/
+
+@media (min-width: 800px){
+  aside{
+    color: orange;
+  }
+}
+
+@media (min-width: 700px){
+  .bandera{
+    display: none;
+  }
+} /*aparece la bandera de Argentina cuando esta en tamano de celular en el header y desaparece en formato tablet o pc*/
+div {
+  display: block;
+}
+
+@media (max-width: 700px){
+  .objeto1{
+    display: none;
+  }
+}
+div {
+  display: block;
+}
+
+@media (min-width: 700px){
+  .asado3{
+    display: none;
+  }
+} /*imagen nueva aparece en formato celular y desaparece en formato pc*/
+div {
+  display: block;
+}
+
+@media (max-width: 700px){
+  .asado2{
+    display: none;
+  }
+}
+div {
+  display: block;
+}
